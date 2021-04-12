@@ -1,9 +1,9 @@
 {
-  "name": "hardhat-deploy",
-  "version": "0.7.4",
+  "name": "shadows-hardhat-deploy",
+  "version": "0.7.5",
   "description": "Hardhat Plugin For Replicable Deployments And Tests",
-  "repository": "github:wighawag/hardhat-deploy",
-  "author": "wighawag",
+  "repository": "https://github.com/ShadowsNetwork/hardhat-deploy",
+  "author": "shadowsnetwork",
   "license": "MIT",
   "publishConfig": {
     "access": "public"

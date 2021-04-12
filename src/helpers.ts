@@ -1050,7 +1050,7 @@ Plus they are only used when the contract is meant to be used as standalone when
           }
 
           let executeReceipt;
-          if (updateMethod) {
+          if (updateMethod && updateMethod !== 'initialize') {
             executeReceipt = await execute(
               proxyAdminName,
               {...options, from: currentProxyAdminOwner},
