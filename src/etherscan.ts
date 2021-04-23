@@ -113,19 +113,19 @@ export async function submitSources(
   let host: string;
   switch (chainId) {
     case '1':
-      host = 'https://api.etherscan.io';
+      host = 'http://api.etherscan.io';
       break;
     case '3':
-      host = 'https://api-ropsten.etherscan.io';
+      host = 'http://api-ropsten.etherscan.io';
       break;
     case '4':
-      host = 'https://api-rinkeby.etherscan.io';
+      host = 'http://api-rinkeby.etherscan.io';
       break;
     case '5':
-      host = 'https://api-goerli.etherscan.io';
+      host = 'http://api-goerli.etherscan.io';
       break;
     case '42':
-      host = 'https://api-kovan.etherscan.io';
+      host = 'http://api-kovan.etherscan.io';
       break;
     case '97':
       host = 'https://api-testnet.bscscan.com';
@@ -319,8 +319,9 @@ export async function submitSources(
     if (submissionData.status === '1') {
       guid = submissionData.result;
     } else {
+      console.log(submissionData);
       logError(
-        `contract ${name} failed to submit : "${submissionData.message}"`,
+        `contractsss ${name} failed to submit : "${submissionData.message}"`,
         submissionData
       );
       return;
